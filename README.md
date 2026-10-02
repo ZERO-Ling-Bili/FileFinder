@@ -1,2 +1,3 @@
 # FileFinder
 It's time to throw away EveryThing!!!
+## 至于说明书……自己看files里的趴，懒得搞了……
