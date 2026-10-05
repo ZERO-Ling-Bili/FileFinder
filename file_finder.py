@@ -80,10 +80,7 @@ class SettingsDialog(QDialog):
         path_layout.addWidget(btn_browse)
         layout.addRow("搜索路径:", path_layout)
 
-        # 关键字
-        self.keyword_input = QLineEdit(current_keyword)
-        self.keyword_input.setPlaceholderText("输入文件名关键字（可选）")
-        layout.addRow("关键字:", self.keyword_input)
+
 
         # 文件类型筛选
         self.ext_input = QLineEdit(current_ext)
@@ -105,7 +102,7 @@ class SettingsDialog(QDialog):
         bg_layout.addWidget(btn_bg_img)
         bg_layout.addWidget(btn_reset_bg)
         layout.addRow("背景设置:", bg_layout)
-
+        layout.addRow(QLabel("copyright  @github-ZERO-Ling 2026-2099"))
         # 确定取消按钮
         buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
         buttons.accepted.connect(self.accept)
